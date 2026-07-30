@@ -7,8 +7,7 @@ content:
     label: Blog Posts
     type: collection
     path: src/content/blog
-    filename: "{fields.title}"
-    extension: md
+    filename: "{fields.title}.md"
     fields:
       - name: title
         label: Title
