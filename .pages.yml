@@ -6,7 +6,7 @@ content:
   - name: blog
     label: Blog Posts
     type: collection
-    path: src/content/blog
+    path: ./src/content/blog
     filename: "{fields.title}"
     fields:
       - name: title
