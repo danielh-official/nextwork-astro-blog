@@ -14,6 +14,7 @@ const posts = (await getCollection("blog")).sort(
             Welcome to my blog. I write about web development, design, and
             things I'm learning along the way.
         </p>
+        <a href="/rss.xml" class="rss-link">Subscribe via RSS</a>
     </header>
     <section class="posts">
         <h2>Recent Posts</h2>
@@ -36,3 +37,54 @@ const posts = (await getCollection("blog")).sort(
         }
     </section>
 </BaseLayout>
+
+<style>
+    .hero {
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+        color: #6b7280;
+        font-size: 1.1rem;
+    }
+
+    .rss-link {
+        display: inline-block;
+        margin-top: 0.75rem;
+        font-size: 0.9rem;
+        color: #f97316;
+    }
+
+    .posts h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .post-card {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #f3f4f6;
+    }
+
+    .post-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .post-card time {
+        font-size: 0.85rem;
+        color: #9ca3af;
+    }
+
+    .post-card p {
+        margin-top: 0.5rem;
+        color: #4b5563;
+    }
+</style>
